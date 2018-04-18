@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/homeCarIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:src="@mipmap/home_car_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/homeCarIcon"
+                android:layout_alignRight="@+id/homeCarIcon"
+                android:src="@mipmap/home_car_info_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="总里程(km)"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12500"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0.5dip"
+                android:layout_height="55dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/alpha30" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="行车时间(h)"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12500"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0.5dip"
+                android:layout_height="55dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/alpha30" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="报警总数(次)"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12500"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maintain_layout"
+            android:layout_width="match_parent"
+            android:layout_height="170dip"
+            android:layout_margin="10dip"
+            android:background="@mipmap/home_radio_left_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/check_mileage_maintain_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingRight="15dip"
+                    android:text="里程保养"
+                    android:textColor="#5a605b"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/check_time_maintain_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingLeft="15dip"
+                    android:text="时间保养"
+                    android:textColor="#5a605b"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mileage_maintain_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/mileage_maintain_btn"
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mileage_maintain_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mileage_bar_view"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#3dad84"
+                    android:text="完成维保"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mileage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:layout_toLeftOf="@+id/mileage_maintain_btn"
+                    android:padding="10dip"
+                    android:text="7300/7500（公里）"
+                    android:textColor="#5a605b"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/mileage_bar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dip"
+                    android:layout_below="@+id/mileage_tv"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@+id/mileage_maintain_btn">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:background="#eeeeee" />
+
+                    <ImageView
+                        android:layout_width="160dip"
+                        android:layout_height="25dip"
+                        android:background="#f06261" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mileage_maintain_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mileage_bar_view"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toLeftOf="@+id/mileage_maintain_btn"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="距离下次维保"
+                        android:textColor="#5a605b"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="200公里"
+                        android:textColor="#5a605b"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time_maintain_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/time_maintain_btn"
+                    android:layout_width="95dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/time_maintain_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/time_bar_view"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#3dad84"
+                    android:text="完成维保"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:layout_toLeftOf="@+id/time_maintain_btn"
+                    android:padding="10dip"
+                    android:text="1000/99（小时）"
+                    android:textColor="#5a605b"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/time_bar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dip"
+                    android:layout_below="@+id/time_tv"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@+id/time_maintain_btn">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dip"
+                        android:background="#eeeeee" />
+
+                    <ImageView
+                        android:layout_width="160dip"
+                        android:layout_height="25dip"
+                        android:background="#f06261" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/time_maintain_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_bar_view"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_toLeftOf="@+id/time_maintain_btn"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="距离下次维保"
+                        android:textColor="#5a605b"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:text="200小时"
+                        android:textColor="#5a605b"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.cimcitech.yygonboard.widget.MyGridView
+            android:id="@+id/house_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_view_layout"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:cacheColorHint="#00000000"
+            android:numColumns="4"
+            android:padding="2dip" />
+
+    </LinearLayout>
+</ScrollView>

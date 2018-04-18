@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <com.cimcitech.yygonboard.widget.MyAppTitleBar
+        android:id="@+id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/password_view_1"
+        layout="@layout/forget_pwd_next_1_view"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/password_view_2"
+        layout="@layout/forget_pwd_next_2_view"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/password_view_3"
+        layout="@layout/forget_pwd_next_3_view"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/password_view_4"
+        layout="@layout/forget_pwd_next_4_view"
+        android:visibility="gone" />
+
+</LinearLayout>

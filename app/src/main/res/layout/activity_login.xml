@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/register_bt"
+        android:orientation="vertical">
+
+        <com.cimcitech.yygonboard.widget.MyAppTitleBar
+            android:id="@+id/title_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dip"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="25dip"
+            android:text="悠幽谷"
+            android:textColor="#757b7b"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/user_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@mipmap/login_input_icon"
+            android:gravity="center"
+            android:hint="请输入用户名"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/user_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="18dip"
+            android:background="@mipmap/login_input_icon"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/login_submit_bt"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="18dip"
+            android:background="@mipmap/login_submit_icon"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/update_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="忘记密码？"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@mipmap/register_btn_icon"
+        android:text="还没有账号，马上注册"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</RelativeLayout>

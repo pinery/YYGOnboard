@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dip"
+        android:src="@mipmap/register_ok_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:padding="10dip"
+        android:text="恭喜您，密码设置成功！"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/go_login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="40dip"
+        android:background="#4fc5b2"
+        android:text="立即登录"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>
