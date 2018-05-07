@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dip"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/top_mid_view"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/check_image_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/self_check_top_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/self_check_top_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/top_mid_view"
+            android:layout_alignTop="@+id/top_mid_view"
+            android:layout_toLeftOf="@+id/top_mid_view"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dip"
+                android:background="@mipmap/self_check_top_left_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="异常项目"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/top_mid_view"
+            android:layout_alignTop="@+id/top_mid_view"
+            android:layout_toRightOf="@+id/top_mid_view"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/self_check_design_red_point">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="80"
+                    android:textColor="@color/white"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="检测得分"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:background="@mipmap/self_check_btn_bg"
+            android:text="一键检测"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

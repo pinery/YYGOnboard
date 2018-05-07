@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_reward_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dip"
+        android:background="@drawable/layout_bg_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dip"
+            android:text="车辆故障"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#f2f2f2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#d2d2d2" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="故障码值"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#d2d2d2" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="含义"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#d2d2d2" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#d2d2d2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#d2d2d2" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#d2d2d2" />
+
+            <com.cimcitech.yygonboard.widget.MyRecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="121dip"
+                android:background="#d2d2d2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#d2d2d2" />
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/button_bg_green"
+            android:text="关闭"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

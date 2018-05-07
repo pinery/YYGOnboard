@@ -41,7 +41,13 @@
         <activity android:name=".activity.user.MyCarDetailActivity" />
         <activity android:name=".activity.user.UserInfoActivity" />
         <activity android:name=".activity.user.MessageSettingActivity" />
-        <activity android:name=".activity.home.SelfCheckActivity"></activity>
+        <activity android:name=".activity.home.SelfCheckActivity" />
+        <activity android:name=".activity.home.CheckAbnormalActivity" />
+        <activity android:name=".activity.home.DrivingLogActivity" />
+        <activity android:name=".activity.home.DataQueryActivity" />
+        <activity android:name=".activity.home.DataQueryDetailActivity" />
+        <activity android:name=".activity.home.DataStatisticsActivity" />
+        <activity android:name=".activity.home.MonthlyReportActivity"></activity>
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <RelativeLayout
+            android:id="@+id/car_list_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -331,16 +332,177 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <com.cimcitech.yygonboard.widget.MyGridView
-            android:id="@+id/house_grid"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/top_view_layout"
-            android:layout_marginLeft="5dip"
-            android:layout_marginRight="5dip"
-            android:cacheColorHint="#00000000"
-            android:numColumns="4"
-            android:padding="2dip" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dip"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip">
 
+            <RelativeLayout
+                android:id="@+id/home_monthly_report"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_1"
+                    android:gravity="center"
+                    android:text="月度报表"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_data_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_2"
+                    android:gravity="center"
+                    android:text="数据统计"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_data_request"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_3"
+                    android:gravity="center"
+                    android:text="数据查询"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_grid_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_4"
+                    android:gravity="center"
+                    android:text="车宝自检"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:layout_marginTop="5dip">
+
+            <RelativeLayout
+                android:id="@+id/home_driving_log"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_5"
+                    android:gravity="center"
+                    android:text="行车日志"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_6"
+                    android:gravity="center"
+                    android:text="商城"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_7"
+                    android:gravity="center"
+                    android:text="洗车"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:background="@mipmap/home_grid_view_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="12dip"
+                    android:drawableTop="@mipmap/home_grid_icon_8"
+                    android:gravity="center"
+                    android:text="4S店"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

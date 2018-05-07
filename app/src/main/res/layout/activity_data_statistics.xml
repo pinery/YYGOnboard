@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cimcitech.yygonboard.widget.MyAppTitleBar
+        android:id="@+id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dip"
+                android:drawableLeft="@mipmap/ic_date_selector"
+                android:drawablePadding="10dip"
+                android:gravity="center"
+                android:text="2016年10月01日"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dip"
+                android:drawablePadding="5dip"
+                android:drawableRight="@mipmap/more_right_icon"
+                android:gravity="center"
+                android:text="选择日期"
+                android:textColor="#777777"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#383b3b"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="车辆数据"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <com.cimcitech.yygonboard.widget.MyGridView
+                android:id="@+id/data_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:cacheColorHint="#00000000"
+                android:numColumns="4"
+                android:padding="2dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="120dip"
+            android:layout_height="50dip"
+            android:layout_above="@+id/bottom_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@mipmap/ic_photo_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/ic_photo"
+                android:drawablePadding="5dip"
+                android:gravity="center"
+                android:text="里程回顾"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

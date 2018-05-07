@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cimcitech.yygonboard.activity.condition.ConditionActivity">
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="2018-10-01 00:00:00"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_bg_green_3"
+            android:text="启动行程"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
